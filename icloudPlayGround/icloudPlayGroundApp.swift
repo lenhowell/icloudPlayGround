@@ -6,12 +6,16 @@
 //
 
 import SwiftUI
+import CloudKit
 
 @main
 struct icloudPlayGroundApp: App {
+    
+    // public Container
+    let container = CKContainer(identifier: "iCloud.com.len.howell.icloudPlayGround")
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(vm: ItemListViewModel(container:container))
         }
     }
 }

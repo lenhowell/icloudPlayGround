@@ -11,6 +11,8 @@
 		BFFF05F729D0817F00968350 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFF05F629D0817F00968350 /* ContentView.swift */; };
 		BFFF05F929D0818000968350 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFFF05F829D0818000968350 /* Assets.xcassets */; };
 		BFFF05FC29D0818000968350 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFFF05FB29D0818000968350 /* Preview Assets.xcassets */; };
+		BFFF060529D088A400968350 /* itemListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFF060429D088A400968350 /* itemListing.swift */; };
+		BFFF060829D096E000968350 /* ItemListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFF060729D096E000968350 /* ItemListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,9 @@
 		BFFF05F629D0817F00968350 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BFFF05F829D0818000968350 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFFF05FB29D0818000968350 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BFFF060229D082A500968350 /* icloudPlayGround.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = icloudPlayGround.entitlements; sourceTree = "<group>"; };
+		BFFF060429D088A400968350 /* itemListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemListing.swift; sourceTree = "<group>"; };
+		BFFF060729D096E000968350 /* ItemListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +56,9 @@
 		BFFF05F329D0817F00968350 /* icloudPlayGround */ = {
 			isa = PBXGroup;
 			children = (
+				BFFF060629D0965C00968350 /* View Models */,
+				BFFF060329D087DF00968350 /* Models */,
+				BFFF060229D082A500968350 /* icloudPlayGround.entitlements */,
 				BFFF05F429D0817F00968350 /* icloudPlayGroundApp.swift */,
 				BFFF05F629D0817F00968350 /* ContentView.swift */,
 				BFFF05F829D0818000968350 /* Assets.xcassets */,
@@ -65,6 +73,22 @@
 				BFFF05FB29D0818000968350 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BFFF060329D087DF00968350 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BFFF060429D088A400968350 /* itemListing.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BFFF060629D0965C00968350 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				BFFF060729D096E000968350 /* ItemListViewModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +162,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFFF05F729D0817F00968350 /* ContentView.swift in Sources */,
+				BFFF060829D096E000968350 /* ItemListViewModel.swift in Sources */,
 				BFFF05F529D0817F00968350 /* icloudPlayGroundApp.swift in Sources */,
+				BFFF060529D088A400968350 /* itemListing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +290,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = icloudPlayGround/icloudPlayGround.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"icloudPlayGround/Preview Content\"";
@@ -293,6 +320,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = icloudPlayGround/icloudPlayGround.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"icloudPlayGround/Preview Content\"";
